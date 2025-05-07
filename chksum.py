@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import hashlib
 import argparse
 import sys
@@ -12,7 +14,7 @@ ERR = str(Fore.RED + "Error:" + Fore.RESET)
 BANNER = """
 
             ##########################
-                   chksum 1.0.5
+                   chksum 1.0.6
                 ------------------
                         *
               (c)2025 Ivaylo Vasilev
@@ -24,7 +26,7 @@ BANNER = """
 parser = argparse.ArgumentParser(prog="chksum", description="chksum - verify file integrity", epilog="(c) Ivaylo Vasilev")
 parser.add_argument("file", nargs="?", metavar="FILE", help="specify file")
 parser.add_argument("-v", "--value", metavar="HASH_VALUE", help="enter hashed value")
-parser.add_argument("--version", action="version", version="%(prog)s 1.0.5", help="show program version")
+parser.add_argument("--version", action="version", version="%(prog)s 1.0.6", help="show program version")
 args = parser.parse_args()
 
 

@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import hashlib
 import argparse
 import sys
@@ -7,7 +9,7 @@ parser = argparse.ArgumentParser(prog="mksum", description="Generate checksum ha
 parser.add_argument("file", nargs="?", help="specify file")
 parser.add_argument("--hash", metavar="hash", default="md5", help="specify hash type")
 parser.add_argument("--list", action="store_true", help="show supported hash types")
-parser.add_argument("--version", action="version", version="%(prog)s 1.0.1", help="show program version")
+parser.add_argument("--version", action="version", version="%(prog)s 1.0.2", help="show program version")
 args = parser.parse_args()
 
 
