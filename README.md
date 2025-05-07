@@ -7,7 +7,37 @@ For a long time I wanted to have a simple and at the same time effective tool to
 *usage example:*
 `$ chksum FILE -v HASH_VALUE`
 
+The output of `--help` optional argument:
+```
+chksum - verify file integrity
+
+positional arguments:
+  FILE                  specify file
+
+options:
+  -h, --help            show this help message and exit
+  -v HASH_VALUE, --value HASH_VALUE
+                        enter hashed value
+  --version             show program version
+```
+
+---
+
 I have also made another CLI program to generate checksum hash value(s), **mksum**. It also supports **md5**, **sha1**, **sha224**, **sha256**, **sha384**, and **sha512**. **mksum** can generate a hash of a single type, for instance *sha256* or can use *all* the supported types at once.
 
 *usage example:*
 `$ mksum FILE --hash HASH_TYPE | all`
+
+The output of `--help` optional argument:
+```
+Generate checksum hash values
+
+positional arguments:
+  file         specify file
+
+options:
+  -h, --help   show this help message and exit
+  --hash hash  specify hash type
+  --list       show supported hash types
+  --version    show program version
+```
