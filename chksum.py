@@ -1,5 +1,13 @@
 #!/usr/bin/env python3
 
+##############################
+# chksum #
+# ====== #
+# Verify the file integrity using checksum hash values
+# Copyright (c)2025 Ivaylo Vasilev. Released under the MIT License; see LICENSE for details.
+# Author: Ivaylo Vasilev
+##############################
+
 import hashlib
 import argparse
 import sys
